@@ -1,0 +1,4 @@
+touch frontend/public/.nojekyll
+git add frontend/public/.nojekyll
+git commit -m "chore: add .nojekyll to prevent Jekyll processing"
+git push origin master
