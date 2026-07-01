@@ -9,7 +9,10 @@ function App() {
   const [loading, setLoading] = useState(false);
 
   const getUser = async () => {
-    if (!username.trim()) return alert("Enter username");
+    if (!username.trim()) {
+      alert("Enter username");
+      return;
+    }
 
     try {
       setLoading(true);
@@ -24,7 +27,7 @@ function App() {
 
       const topRepos = repoRes.data
         .sort((a, b) => b.stargazers_count - a.stargazers_count)
-        .slice(0, 6); // ⭐ TOP 6 ONLY
+        .slice(0, 6);
 
       setUser(userRes.data);
       setRepos(topRepos);
@@ -39,9 +42,10 @@ function App() {
 
   return (
     <div className="app">
-
       <h1>⚡ GitHub Analytics Pro</h1>
-      <p className="subtitle">Search any GitHub profile and review the top repositories at a glance.</p>
+      <p className="subtitle">
+        Search any GitHub profile and review top repositories.
+      </p>
 
       <div className="search">
         <input
@@ -68,8 +72,12 @@ function App() {
               <span>📦 {user.public_repos}</span>
             </div>
 
-           <a href="..." target="_blank" rel="noopener noreferrer">Open</a>
-              View GitHub
+            <a
+              href={user.html_url}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View GitHub →
             </a>
           </div>
         </div>
@@ -89,7 +97,11 @@ function App() {
 
               <p>💻 {repo.language || "N/A"}</p>
 
-              <a href="..." target="_blank" rel="noopener noreferrer">Open</a>
+              <a
+                href={repo.html_url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Open Repo →
               </a>
             </div>
