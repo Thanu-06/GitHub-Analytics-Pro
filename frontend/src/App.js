@@ -68,7 +68,7 @@ function App() {
               <span>📦 {user.public_repos}</span>
             </div>
 
-            <a href={user.html_url} target="_blank">
+           <a href="..." target="_blank" rel="noopener noreferrer">Open</a>
               View GitHub
             </a>
           </div>
@@ -89,7 +89,7 @@ function App() {
 
               <p>💻 {repo.language || "N/A"}</p>
 
-              <a href={repo.html_url} target="_blank">
+              <a href="..." target="_blank" rel="noopener noreferrer">Open</a>
                 Open Repo →
               </a>
             </div>
