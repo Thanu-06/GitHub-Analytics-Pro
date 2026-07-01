@@ -74,7 +74,7 @@ npm start
 The application will run at:
 
 ```
-[http://localhost:3000](http://localhost:3000/GitHub-Analytics-Pro)
+(https://thanu-06.github.io/GitHub-Analytics-Pro/)
 ```
 
 ---
