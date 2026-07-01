@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/GitHub-Analytics-Pro/static/css/main.bca9b9e4.css",
+    "main.js": "/GitHub-Analytics-Pro/static/js/main.e08d2e97.js",
+    "static/js/453.20359781.chunk.js": "/GitHub-Analytics-Pro/static/js/453.20359781.chunk.js",
+    "index.html": "/GitHub-Analytics-Pro/index.html",
+    "main.bca9b9e4.css.map": "/GitHub-Analytics-Pro/static/css/main.bca9b9e4.css.map",
+    "main.e08d2e97.js.map": "/GitHub-Analytics-Pro/static/js/main.e08d2e97.js.map",
+    "453.20359781.chunk.js.map": "/GitHub-Analytics-Pro/static/js/453.20359781.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bca9b9e4.css",
+    "static/js/main.e08d2e97.js"
+  ]
+}
